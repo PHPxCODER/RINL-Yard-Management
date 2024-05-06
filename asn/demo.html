@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>IP to ASN Example Browser</title>
+  <meta name="description" content="IP to ASN Example">
+  <meta name="author" content="ipapi.is">
+</head>
+
+<body>
+  <pre id="asn"></pre>
+  <script type="text/javascript" src="dist/ipToASN.min.js"></script>
+  <script type="text/javascript">
+    ipToASN('103.106.200.0').then((res) => {
+      document.getElementById('asn').innerText = JSON.stringify(res, null, 2);
+    });
+  </script>
+</body>
+
+</html>
