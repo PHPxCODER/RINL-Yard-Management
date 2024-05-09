@@ -54,7 +54,8 @@ gethostbyaddr($_SERVER['REMOTE_ADDR']);
 
 // API URL for IPAPI.is
 // $api_url = 'https://api.ipapi.is/?q=' .getUserIpAddr();
-$api_url = 'https://api.ipapi.is/?q=162.218.156.0';
+// $api_url = 'https://api.ipapi.is/?q=162.218.156.0';
+$api_url = 'https://api.ipapi.is/';
 
 
 // Fetch JSON data from the API URL
@@ -76,11 +77,7 @@ if (isset($data_object->asn)) {
 ?>
 
 </font>
-
-
   </div>
-
-       
   </div>
   <!--/.Copyright-->
 
