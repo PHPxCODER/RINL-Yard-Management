@@ -5,8 +5,7 @@
 footer {
   background-color: #212121 !important;
   /* if you don't like the sticky footer, comment in the line below */
-  /* position: relative !important; */
-}
+   position: relative !important; 
 
 /* override footer text color */
 footer.page-footer .footer-copyright {
