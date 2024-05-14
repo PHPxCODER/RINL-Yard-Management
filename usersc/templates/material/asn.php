@@ -1,4 +1,4 @@
-<br><font color="white">&copy;
+<div class="mini-footer"><font color="white">&copy;
     <?php echo date("Y"); ?>
     <?=$settings->copyright; ?>
        <br>
