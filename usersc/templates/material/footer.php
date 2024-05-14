@@ -32,11 +32,11 @@ $(document).ready(function(){
                     <!--Grid column-->
                     <div class="col-md-6 col-lg-7 text-center text-md-right">
                         <!--Facebook-->
-                        <a class="p-2 m-2 fa-lg fb-ic ml-0" href="https://facebook.com/RINLltd/">
+                        <a class="p-2 m-2 fa-lg fb-ic ml-0" href="https://facebook.com/RINLltd/" target=”_blank”>
                             <i class="fab fa-facebook-f white-text mr-lg-4"> </i>
                         </a>
                         <!--Twitter-->
-                        <a class="p-2 m-2 fa-lg tw-ic" href="https://twitter.com/RINL_VSP">
+                        <a class="p-2 m-2 fa-lg tw-ic" href="https://twitter.com/RINL_VSP" target=”_blank”>
                             <i class="fab fa-twitter white-text mr-lg-4"> </i>
                         </a>
                         <!--Google +-->
@@ -44,11 +44,11 @@ $(document).ready(function(){
                             <i class="fab fa-google-plus-g white-text mr-lg-4"> </i>
                         </a>
                         <!--Linkedin-->
-                        <a class="p-2 m-2 fa-lg li-ic" href="https://linkedin.com/company/rashtriya-ispat-nigam-limited-visakhapatnam-steel-plant">
+                        <a class="p-2 m-2 fa-lg li-ic" href="https://linkedin.com/company/rashtriya-ispat-nigam-limited-visakhapatnam-steel-plant" target=”_blank”>
                             <i class="fab fa-linkedin-in white-text mr-lg-4"> </i>
                         </a>
                         <!--Instagram-->
-                        <a class="p-2 m-2 fa-lg ins-ic" href="https://instagram.com/r.i.n.l/">
+                        <a class="p-2 m-2 fa-lg ins-ic" href="https://instagram.com/r.i.n.l/" target=”_blank”>
                             <i class="fab fa-instagram white-text mr-lg-4"> </i>
                         </a>
                     </div>
