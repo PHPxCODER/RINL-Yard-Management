@@ -7,7 +7,12 @@
 ?>
 <!-- <label for="confirm">Pick an account ID number</label>
 <input type="number" class="form-control" min="0" step="1" name="account_id" value="" required> -->
-
+<div class="form-group">
+      <label for="transport_type">Preferred Transportation Method*</label>
+  <select name="transport_type" id="transport_type" class="form-control">
+    <option value="Truck">Trucks (by Road)</option>
+    <option value="Rake">Rake (by Rail)</option>
+  </select></div>
 <?php
 //Now, go into the during_user_creation script to see how to process it.
  ?>

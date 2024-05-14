@@ -102,6 +102,32 @@ if (!empty($_POST)) {
                 }
             }
         }
+
+        //Update Transportation
+        $transport_type = ucfirst(Input::get('transport_type'));
+        if ($userdetails->transport != $transport_type) {
+            $fields = ['transport_type' => $transport_type];
+            $validation->check($_POST, [
+        'fname' => [
+
+          'required' => true,
+
+        ],
+      ]);
+            if ($validation->passed()) {
+                $db->update('users', $userId, $fields);
+                $successes[] = 'Transportation Updated';
+                logger($user->data()->id, 'User', "Changed fname from $userdetails->Transport to $transport_type.");
+            } else {
+                //validation did not pass
+                foreach ($validation->errors() as $error) {
+                    $errors[] = $error;
+                }
+            }
+        }
+
+
+
         //Update last name
         $lname = ucfirst(Input::get('lname'));
         if ($userdetails->lname != $lname) {
@@ -279,6 +305,14 @@ if (!empty($_POST)) {
             <div class="form-group" id="lname-group">
               <label id="lname-label"><?=lang('GEN_LNAME'); ?></label>
               <input  class='form-control' type='text' id="lname-label" name='lname' value='<?=$userdetails->lname; ?>' autocomplete="off" />
+            </div>
+
+          <div class="form-group" id="transport-group">
+            <label for="transport_type">Transportation Method : <?=$userdetails->transport_type; ?></label>
+            <select name="transport_type" id="transport_type" class="form-control">
+            <option value="Truck">Trucks (by Road)</option>
+            <option value="Rake">Rake (by Rail)</option>
+          </select>
             </div>
 
             <div class="form-group" id="email-group">

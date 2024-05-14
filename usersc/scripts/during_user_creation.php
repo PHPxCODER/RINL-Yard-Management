@@ -4,7 +4,7 @@
 // You have access to two things that will really be helpful.
 //
 // You have the new user id for your new user. Comment out below to see it.
-// dump($theNewId);
+//  dump($theNewId);
 
 //You also have access to everything that was submitted in the form.
 // dump($_POST);
@@ -15,7 +15,7 @@
 
 // The format of the array is ['column_name'=>Data_for_column]
 
-// $db->update('users',$theNewId,['account_id'=>Input::get('account_id')]);
+$db->update('users',$transport_type,['transport_type'=>Input::get('transport_type')]);
 
 // You'll notice that the account id is now in the database!
 

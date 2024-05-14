@@ -55,6 +55,7 @@ if ($user->isLoggedIn() || !$user->isLoggedIn() && !hasPerm(2)) {
 }
 $grav = fetchProfilePicture($user->data()->id);
 $get_info_id = $user->data()->id;
+$transport = $user->data()->transport_type;
 // $groupname = ucfirst($loggedInUser->title);
 $raw = date_parse($user->data()->join_date);
 $signupdate = $raw['month'].'/'.$raw['day'].'/'.$raw['year'];
@@ -85,6 +86,7 @@ $userdetails = fetchUserDetails(null, null, $get_info_id); //Fetch user details
 		<p><span id="fname"><?=ucfirst($user->data()->fname).' '.ucfirst($user->data()->lname); ?> </span><span id="slash">/</span> <span id="lname"><?=echouser($user->data()->id); ?></span></p>
 		<p><?=lang('ACCT_SINCE'); ?>: <?=$signupdate; ?></p>
 		<p><?=lang('ACCT_LOGINS'); ?>: <?=$user->data()->logins; ?></p>
+        <p>Preferred Transportation : <?=$user->data()->transport_type?></p>
 		<?php
         includeHook($hooks, 'bottom'); ?>
 	</div>

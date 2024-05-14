@@ -23,9 +23,8 @@ $(document).ready(function(){
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
   <!--Copyright-->
   <div class="footer-copyright py-3">
-    &copy;
-      <?php require_once 'asn.php' ?>
-</font>
+      <?php require_once 'asn.php' ?> 
+      <!-- Footer Text with Copyright and ASN Details -->
   </div>
   </div>
   <!--/.Copyright-->

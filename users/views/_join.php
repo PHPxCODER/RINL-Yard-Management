@@ -1,26 +1,3 @@
-<?php
-/*
-This is a user-facing page
-UserSpice 5
-An Open Source PHP User Management System
-by the UserSpice Team at http://UserSpice.com
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-Special thanks to John Bovey for the password strenth feature.
-*/
-?>
 <style>
 .gray_out_icon{
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -42,7 +19,7 @@ Special thanks to John Bovey for the password strenth feature.
 
     <form class="form-signup" action="" method="<?=$form_method;?>" id="payment-form">
 
-      <h2 class="form-signin-heading"> <?=lang("SIGNUP_TEXT","");?></h2>
+      <h2 class="form-signin-heading"> Register Page</h2>
 
       <div class="form-group">
         <label id="username-label"><?=lang("GEN_UNAME");?>*</label>
@@ -73,6 +50,11 @@ Special thanks to John Bovey for the password strenth feature.
         <input  class="form-control" type="text" name="email" id="email" placeholder="<?=lang("GEN_EMAIL");?>" value="<?php if (!$form_valid && !empty($_POST)){ echo $email;} ?>"
         required autocomplete="email">
       </div>
+
+      <?php
+      includeHook($hooks,'form');
+      include($abs_us_root.$us_url_root.'usersc/scripts/additional_join_form_fields.php');
+      ?>
 
       <div class="form-group">
         <?php
@@ -135,10 +117,7 @@ Special thanks to John Bovey for the password strenth feature.
         </div>
       </div>
 
-      <?php
-      includeHook($hooks,'form');
-      include($abs_us_root.$us_url_root.'usersc/scripts/additional_join_form_fields.php');
-      ?>
+
 
       <input type="hidden" value="<?=Token::generate();?>" name="csrf">
 

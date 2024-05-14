@@ -166,7 +166,7 @@ if (Input::exists()) {
                 if (!$activeCheck->error()) {
                     $fields['active'] = 1;
                 }
-                $theNewId = $user->create($fields);
+                $transport_type = $user->create($fields);
 
                 includeHook($hooks, 'post');
             } catch (Exception $e) {
@@ -179,14 +179,14 @@ if (Input::exists()) {
                 include $abs_us_root.$us_url_root.'usersc/scripts/during_user_creation.php';
 
                 if ($act == 1) {
-                    logger($theNewId, 'User', 'Registration completed and verification email sent.');
+                    logger($transport_type, 'User', 'Registration completed and verification email sent.');
                     $query = $db->query('SELECT * FROM email');
                     $results = $query->first();
                     $act = $results->email_act;
                     require $abs_us_root.$us_url_root.'users/views/_joinThankYou_verify.php';
 
                 } else {
-                    logger($theNewId, 'User', 'Registration completed.');
+                    logger($transport_type, 'User', 'Registration completed.');
                     if (file_exists($abs_us_root.$us_url_root.'usersc/views/_joinThankYou.php')) {
                         require_once $abs_us_root.$us_url_root.'usersc/views/_joinThankYou.php';
                     } else {
