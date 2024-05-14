@@ -1,9 +1,10 @@
+<link rel="stylesheet" type="text/css" href="<?=$us_url_root?>usersc/templates/material/color_override.css" media=screen>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 <style media="screen">
 
 /* override footer bg color */
 footer {
-  background-color: #212121 !important;
+  /* background-color: #212121 !important; */
   /* if you don't like the sticky footer, comment in the line below */
    position: relative !important; 
 
