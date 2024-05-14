@@ -101,15 +101,15 @@ if ($navstyle == 'Default') {
               <a href="<?=$us_url_root?>users/admin.php?view=logs" class="list-group-item collapsed">System Logs</a>
               <a href="<?=$us_url_root?>users/logout.php" class="list-group-item collapsed">Logout</a>
             </div>
-          <?php } else { ?>
+            <?php } else { ?>
             <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-home"></i> <span class="d-none d-md-inline">Home</span></a>
-            <a href="<?=$us_url_root?>users/login.php" class="list-group-item d-inline-block collapsed"><i class="fa fa-sign-in"></i> Login</a>
-            <a href="<?=$us_url_root?>users/join.php" class="list-group-item d-inline-block collapsed"><i class="fa fa-plus-square"></i> Register</a>
+            <a href="<?=$us_url_root?>users/login" class="list-group-item d-inline-block collapsed"><i class="fa fa-sign-in"></i> Login</a>
+            <a href="<?=$us_url_root?>users/join" class="list-group-item d-inline-block collapsed"><i class="fa fa-plus-square"></i> Register</a>
             <a href="#menu2" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false"><i class="fa fa-cog"></i> <span class="d-none d-md-inline">Help</span> </a>
             <div class="collapse" id="menu2" data-parent="#sidebar">
-              <a href="<?=$us_url_root?>users/forgot_password.php"><i class="fa fa-wrench"></i> Forgot Password</a>
+              <a href="<?=$us_url_root?>users/forgot_password"><i class="fa fa-wrench"></i> Forgot Password</a>
               <?php if ($email_act){ //Only display following menu item if activation is enabled ?>
-                <a href="<?=$us_url_root?>users/verify_resend.php"><i class="fa fa-exclamation-triangle"></i> Resend Activation Email</a>
+                <a href="<?=$us_url_root?>users/verify_resend"><i class="fa fa-exclamation-triangle"></i> Resend Activation Email</a>
               <?php }?>
             </div>
 
@@ -176,15 +176,15 @@ if ($navstyle == 'Default') {
                 <a href="<?=$us_url_root?>users/admin.php?view=logs" class="list-group-item collapsed">System Logs</a>
                 <a href="<?=$us_url_root?>users/logout.php" class="list-group-item collapsed">Logout</a>
               </div>
-            <?php } else { ?>
+              <?php } else { ?>
               <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebarLeft"><i class="fa fa-home"></i> <span class="d-none d-md-inline">Home</span></a>
-              <a href="<?=$us_url_root?>users/login.php" class="list-group-item d-inline-block collapsed"><i class="fa fa-sign-in"></i> Login</a>
-              <a href="<?=$us_url_root?>users/join.php" class="list-group-item d-inline-block collapsed"><i class="fa fa-plus-square"></i> Register</a>
+              <a href="<?=$us_url_root?>users/login" class="list-group-item d-inline-block collapsed"><i class="fa fa-sign-in"></i> Login</a>
+              <a href="<?=$us_url_root?>users/join" class="list-group-item d-inline-block collapsed"><i class="fa fa-plus-square"></i> Register</a>
               <a href="#menu2" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false"><i class="fa fa-cog"></i> <span class="d-none d-md-inline">Help</span> </a>
               <div class="collapse" id="menu2" data-parent="#sidebarLeft">
-                <a href="<?=$us_url_root?>users/forgot_password.php"><i class="fa fa-wrench"></i> Forgot Password</a>
+                <a href="<?=$us_url_root?>users/forgot_password"><i class="fa fa-wrench"></i> Forgot Password</a>
                 <?php if ($email_act){ //Only display following menu item if activation is enabled ?>
-                  <a href="<?=$us_url_root?>users/verify_resend.php"><i class="fa fa-exclamation-triangle"></i> Resend Activation Email</a>
+                  <a href="<?=$us_url_root?>users/verify_resend"><i class="fa fa-exclamation-triangle"></i> Resend Activation Email</a>
                 <?php }?>
               </div>
 

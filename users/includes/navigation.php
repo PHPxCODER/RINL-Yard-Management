@@ -103,7 +103,7 @@ if ($user->isLoggedIn()) {
 						<ul class="dropdown-menu">
 							<li><a href="<?=$us_url_root?>users/forgot_password.php"><i class="fa fa-wrench"></i> Forgot Password</a></li>
 							<?php if ($email_act){ //Only display following menu item if activation is enabled ?>
-								<li><a href="<?=$us_url_root?>users/verify_resend.php"><i class="fa fa-exclamation-triangle"></i> Resend Activation Email</a></li>
+								<li><a href="<?=$us_url_root?>users/verify_resend"><i class="fa fa-exclamation-triangle"></i> Resend Activation Email</a></li>
 							<?php }?>
 						</ul>
 					</li>
