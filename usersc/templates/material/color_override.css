@@ -3,9 +3,9 @@
 } */
 body{
   font-family: 'Bahamas', Bahamas;
-    animation: fadeInAnimation ease 2s ;
+    /* animation: fadeInAnimation ease 2s ;
     animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;  */
 } 
   
 @keyframes fadeInAnimation { 
@@ -24,6 +24,7 @@ p,b,h1,h2,h3,h4,u,li,span {
   font-family: Bahamas; 
 }
 .jumbotron{
+  padding: 1rem 1rem !important;
 	background: rgba(255,255,255,0.1); 
 }
 footer {

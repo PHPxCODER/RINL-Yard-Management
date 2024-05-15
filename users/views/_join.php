@@ -7,7 +7,7 @@
   opacity: .5;
 }
 </style>
-
+<br><div class="jumbotron">
 <div class="row">
   <div class="col-sm-12">
     <?php
