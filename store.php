@@ -85,7 +85,7 @@ $cats = $db->query("SELECT * FROM store_categories WHERE is_subcat = 0 ORDER BY 
 }
 </style>
 
-
+<br><div class="jumbotron">
 <div id="page-wrapper">
 	<div class="container-fluid">
 		<!-- Page Heading -->
@@ -213,6 +213,7 @@ $cats = $db->query("SELECT * FROM store_categories WHERE is_subcat = 0 ORDER BY 
 		</div>
 	</div> <!-- /.container -->
 </div> <!-- /.wrapper -->
+</div> <!-- /.jumbotron -->
 
 
 <?php //require_once $abs_us_root.$us_url_root.'users/includes/page_footer.php'; // the final html footer copyright row + the external js calls ?>

@@ -12,10 +12,10 @@ $settings = $settingsQ->first();
 <div class="container">
 <div class="row">
 	<div class="col-sm-12">
-				<h1 align="center" style="font-size: 140px; color: #FFD700; text-align:center"><i class="fa fa-frown-o fa-2x"></i></h1>
+				<h1 align="center" style="font-size: 80px; color: #FFD700; text-align:center"><i class="fa fa-frown-o fa-2x"></i></h1>
 				    <h3 align="center"><?=lang("MAINT_HEAD");?></h3>
 				        <p align="center"><?=lang("MAINT_MSG")?></p>
-				        <p align="center">&mdash; -<?=$settings->site_name?></p>
+				        <p align="center">-<?=$settings->site_name?></p>
 		</div>
 	</div>
 </div>

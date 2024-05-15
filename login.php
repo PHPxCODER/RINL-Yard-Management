@@ -79,7 +79,11 @@ if (!empty($_POST['login_hook'])) {
       $dest = '';
     }
     $token = Token::generate();
-    ?><br><div class="jumbotron">
+    ?>
+    <!-- Your custom styles (optional) -->
+
+    
+    <br><div class="jumbotron">
     <div id="page-wrapper">
       <div class="container">
         <div class="row">

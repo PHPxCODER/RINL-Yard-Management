@@ -218,8 +218,8 @@ function activeDropdown($View, $dropId, $Area = false){
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
-        <a class="nav-brand" href="<?=$us_url_root?>index.php"><img src="images/logo.png" alt="Logo"></a>
-        <a class="nav-brand nav-small d-none" href="./"><img src="images/logo2.png" alt="Logo"></a>
+        <a class="nav-brand" href="<?=$us_url_root?>index.php"><img src="images/RINL_LogoW.png" alt="Logo" width="40%"></a>
+        <a class="nav-brand nav-small d-none" href="#"><img src="images/logo2.png" alt="Logo" width="150%"></a>
       </div>
       <div id="main-menu" class="main-menu collapse navbar-collapse">
         <ul class="nav navbar-nav">
