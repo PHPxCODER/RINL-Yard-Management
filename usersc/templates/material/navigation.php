@@ -1,8 +1,7 @@
-<!-- Grab the initial menu work that UserSpice does for you -->
+
 <?php require_once($abs_us_root . $us_url_root . 'users/includes/template/database_navigation_prep.php'); ?>
 
-<!-- This file is a way of allowing the end user to customize stuff -->
-<!-- without getting in the middle of the whole template itself -->
+
 <?php
 require_once($abs_us_root . $us_url_root . 'usersc/templates/' . $settings->template . '/assets/functions/style.php');
 
@@ -14,7 +13,7 @@ if (file_exists($abs_us_root . $us_url_root . 'usersc/templates/' . $settings->t
 
 if ($navstyle == 'Default') {
   ?>
-  <!-- Set your logo and the "header" of the navigation here -->
+  
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <a href="<?= $us_url_root ?>"><img src="<?= $us_url_root ?>users/images/RINL_LogoW.png" width="30%"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">

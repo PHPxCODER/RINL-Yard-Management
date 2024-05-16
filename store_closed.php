@@ -4,7 +4,7 @@ require_once $abs_us_root.$us_url_root.'users/includes/template/prep.php';
 $db=DB::getInstance();
 if(!pluginActive("store")){die();}
 ?>
-
+<style>h4{color:#000;}</style>
 <br><div class="jumbotron">
 <div id="page-wrapper">
 	<div class="container-fluid">

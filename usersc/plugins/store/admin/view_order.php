@@ -1,5 +1,5 @@
 <?php
-require 'users/init.php';
+require '../../../../users/init.php';
 require_once $abs_us_root.$us_url_root.'users/includes/template/prep.php';
 //require_once $abs_us_root.$us_url_root.'users/includes/navigation.php';
 if (!securePage($_SERVER['PHP_SELF'])){die();} $db=DB::getInstance(); if(!pluginActive("store")){die();}
@@ -37,8 +37,8 @@ if($orderC < 1){
 }
 }
 ?>
-<style>h4{color : #000;}</style>
-<br><div class="jumbotron">
+
+
 <div id="page-wrapper">
 	<div class="container-fluid">
 		<!-- Page Heading -->
@@ -88,5 +88,9 @@ if($orderC < 1){
 		</div>
 	</div> <!-- /.container -->
 </div> <!-- /.wrapper -->
-</div> <!-- /.jumbotron -->
 
+
+<?php //require_once $abs_us_root.$us_url_root.'users/includes/page_footer.php'; // the final html footer copyright row + the external js calls ?>
+
+
+<?php require_once $abs_us_root.$us_url_root.'users/includes/html_footer.php'; // currently just the closing /body and /html ?>
