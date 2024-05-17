@@ -343,7 +343,7 @@ if (!function_exists('securePage')) {
             ];
             $db->insert('audit', $fields);
             require_once $abs_us_root.$us_url_root.'usersc/scripts/not_logged_in.php';
-            Redirect::to($us_url_root.'users/login.php?dest='.$page.'&redirect='.$dest);
+            Redirect::to($us_url_root.'login.php?dest='.$page.'&redirect='.$dest);
 
             return false;
         } else {
