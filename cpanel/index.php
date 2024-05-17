@@ -22,12 +22,12 @@ if (!securePage($_SERVER['PHP_SELF'])) {
 		if (is_numeric($open)) {
 			if ($open == 1) {
 				$db->update('settings', 1, ['open' => 1]);
-				Redirect::to('index.php?view=plugins_config&plugin=store&open=x');
+				Redirect::to('?view=plugins_config&plugin=store&open=x');
 			}
 
 			if ($open == 0) {
 				$db->update('settings', 1, ['open' => 0]);
-				Redirect::to('index.php?view=plugins_config&plugin=store&open=x');
+				Redirect::to('?view=plugins_config&plugin=store&open=x');
 			}
 		}
 		$settings = $db->query("SELECT * FROM settings")->first();
@@ -105,7 +105,7 @@ if (!securePage($_SERVER['PHP_SELF'])) {
   					<!-- Panel -->
   					<div class="col-6 col-sm-4 col-md-3">
   						<div class="card">
-  							<a href="<?= $us_url_root ?>cpanel/index.php?view=plugins_config&plugin=store&open=0">
+  							<a href="<?= $us_url_root ?>cpanel/?view=plugins_config&plugin=store&open=0">
   								<h3 align="center"><i class="fa fa-bell-slash fa-2x"></i></h3>
   								<h3 align="center">Close</h3>
   								<h3 align="center">Store</h3>
@@ -117,7 +117,7 @@ if (!securePage($_SERVER['PHP_SELF'])) {
   					<!-- Panel -->
   					<div class="col-6 col-sm-4 col-md-3">
   						<div class="card">
-  							<a href="<?= $us_url_root ?>cpanel/index.php?view=plugins_config&plugin=store&open=1">
+  							<a href="<?= $us_url_root ?>cpanel/?view=plugins_config&plugin=store&open=1">
   								<h3 align="center"><i class="fa fa-bell fa-2x"></i></h3>
   								<h3 align="center">Open</h3>
   								<h3 align="center">Store</h3>
