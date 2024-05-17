@@ -80,7 +80,7 @@ if (Input::get('forgotten_password')) {
     }
 }
 ?>
-
+<br><div class="jumbotron">
 <div id="page-wrapper">
 <div class="container">
 <?php
@@ -96,7 +96,7 @@ includeHook($hooks,'bottom');
 ?>
 </div><!-- /.container-fluid -->
 </div><!-- /#page-wrapper -->
-
+</div><!-- /jumbotron -->
 <?php require_once $abs_us_root.$us_url_root.'users/includes/page_footer.php'; // the final html footer copyright row + the external js calls ?>
 
 <!-- Place any per-page javascript here -->

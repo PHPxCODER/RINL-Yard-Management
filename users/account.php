@@ -61,7 +61,7 @@ $raw = date_parse($user->data()->join_date);
 $signupdate = $raw['month'].'/'.$raw['day'].'/'.$raw['year'];
 $userdetails = fetchUserDetails(null, null, $get_info_id); //Fetch user details
 ?>
-
+<br><div class="jumbotron">
 <div id="page-wrapper">
 <div class="container">
 <div class="well">
@@ -98,7 +98,7 @@ $userdetails = fetchUserDetails(null, null, $get_info_id); //Fetch user details
 </div> <!-- /container -->
 
 </div> <!-- /#page-wrapper -->
-
+</div> <!-- /jumbotron -->
 <!-- footers -->
 
 <?php require_once $abs_us_root.$us_url_root.'users/includes/html_footer.php'; ?>

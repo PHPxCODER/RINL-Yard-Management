@@ -248,7 +248,7 @@ if (!empty($_POST)) {
     sessionValMessages($successes,$errors);
     Redirect::to("user_settings.php");
 }
-?>
+?><br><div class="jumbotron">
 <div id="page-wrapper">
   <div class="container">
     <div class="well">
@@ -368,5 +368,6 @@ if (!empty($_POST)) {
 
       </div> <!-- /#page-wrapper -->
 
+      </div>
 
       <?php require_once $abs_us_root.$us_url_root.'users/includes/html_footer.php'; ?>

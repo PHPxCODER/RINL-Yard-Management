@@ -69,7 +69,7 @@ if(Input::exists('post')){
 }
 
 ?>
-
+<br><div class="jumbotron">
 <div id="page-wrapper">
 <div class="container">
 
@@ -84,7 +84,7 @@ if ($email_sent){
 ?>
 </div>
 </div>
-
+</div>
 <?php require_once $abs_us_root.$us_url_root.'users/includes/page_footer.php'; // the final html footer copyright row + the external js calls ?>
 
   <!-- Place any per-page javascript here -->
