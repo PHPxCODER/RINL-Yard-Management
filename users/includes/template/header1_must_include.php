@@ -13,7 +13,17 @@ ob_start();
 	?>
 	<script src="<?=$us_url_root?>users/js/messages.js"></script>
 	<title><?= (($pageTitle != '') ? $pageTitle : ''); ?> <?=$settings->site_name?></title>
+	<div class="bg"></div>
     <style media="screen">
-    body{background: url('<?=$us_url_root?>users/images/bg.svg') center center;
-              -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+	.bg {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: url('<?=$us_url_root?>users/images/bg.svg') transparent;
+    background-size: auto 100%;
+    z-index: -1;
+}
     </style>

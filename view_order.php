@@ -81,7 +81,7 @@ if($orderC < 1){
 			<?php }
 			if($settings->email_msg != ""){ ?>
 			<h3 align="center">Important Message</h3>
-			<strong><?=$settings->email_msg?></strong>
+			<strong><center><?=$settings->email_msg?></center></strong>
 			<?php } ?>
 			<form><p align="center"><input type="button" value="Print This Page For Your Records" onClick="window.print()"></p></form>
 		</div>
