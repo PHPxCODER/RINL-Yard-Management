@@ -105,7 +105,7 @@ if (!securePage($_SERVER['PHP_SELF'])) {
   					<!-- Panel -->
   					<div class="col-6 col-sm-4 col-md-3">
   						<div class="card">
-  							<a href="<?= $us_url_root ?>cpanel/?view=plugins_config&plugin=store&open=0">
+  							<a href="<?= $us_url_root ?>cpanel?view=plugins_config&plugin=store&open=0">
   								<h3 align="center"><i class="fa fa-bell-slash fa-2x"></i></h3>
   								<h3 align="center">Close</h3>
   								<h3 align="center">Store</h3>
@@ -117,7 +117,7 @@ if (!securePage($_SERVER['PHP_SELF'])) {
   					<!-- Panel -->
   					<div class="col-6 col-sm-4 col-md-3">
   						<div class="card">
-  							<a href="<?= $us_url_root ?>cpanel/?view=plugins_config&plugin=store&open=1">
+  							<a href="<?= $us_url_root ?>cpanel?view=plugins_config&plugin=store&open=1">
   								<h3 align="center"><i class="fa fa-bell fa-2x"></i></h3>
   								<h3 align="center">Open</h3>
   								<h3 align="center">Store</h3>
