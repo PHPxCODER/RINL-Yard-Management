@@ -16,7 +16,7 @@ if(isset($user) && $user->isLoggedIn()){
 			<h1 align="center"><?=lang("JOIN_SUC");?> <?php echo $settings->site_name;?> Yard Management System</h1>
 			<p align="center" class="text-muted">
 			Purchasing Steel Made Easy.
-				<?=lang("MAINT_OPEN")?>
+				
 			</p>
 			<p align="center">
 				<?php
